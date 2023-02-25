@@ -5,68 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clone-twitter-homa-page</title>
+    <title>Tweet-clone</title>
+    <link rel="stylesheet" href="Index.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <i class="fab fa-twitter"></i>
+
+    <body>
+        <header>
             <h1>Twitter Clone</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">Tweet</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="tweets-container">
-            <div class="tweet">
-                <img src="https://via.placeholder.com/50x50" alt="User Avatar">
-                <div class="tweet-body">
-                    <div class="tweet-header">
-                        <h2>John Doe</h2>
-                        <p>@johndoe - 10m</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis scelerisque
-                        efficitur. Sed egestas vel nisl ac sagittis. Quisque lobortis odio velit, ac venenatis ipsum
-                        imperdiet vitae. Nullam maximus placerat risus ac eleifend.</p>
-                    <div class="tweet-footer">
-                        <button class="reply-btn"><i class="fas fa-reply"></i></button>
-                        <button class="retweet-btn"><i class="fas fa-retweet"></i></button>
-                        <button class="like-btn"><i class="fas fa-heart"></i></button>
-                        <button class="share-btn"><i class="fas fa-share"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="tweet">
-                <img src="https://via.placeholder.com/50x50" alt="User Avatar">
-                <div class="tweet-body">
-                    <div class="tweet-header">
-                        <h2>Jane Smith</h2>
-                        <p>@janesmith - 20m</p>
-                    </div>
-                    <p>Tempus lobortis neque ut condimentum. Duis porta convallis purus, eget sodales nulla bibendum
-                        et. Fusce pretium leo et leo dictum, ut congue nunc posuere. Etiam a risus vitae elit accumsan
-                        bibendum vulputate quis neque. In tempus turpis leo.</p>
-                    <div class="tweet-footer">
-                        <button class="reply-btn"><i class="fas fa-reply"></i></button>
-                        <button class="retweet-btn"><i class="fas fa-retweet"></i></button>
-                        <button class="like-btn"><i class="fas fa-heart"></i></button>
-                        <button class="share-btn"><i class="fas fa-share"></i></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more tweets here -->
-        </div>
-    </main>
-</body>
+        </header>
+        <main>
+            <section class="tweet-input">
+                <form>
+                    <label for="tweet-text">What's happening?</label>
+                    <textarea id="tweet-text" name="tweet-text"></textarea>
+                    <button type="submit">Tweet</button>
+                </form>
+            </section>
+            <section class="tweet-list">
+                <ul id="tweet-list">
+                    <!-- Tweet items will be added dynamically with JavaScript -->
+                </ul>
+            </section>
+        </main>
+    </body>
 
 </html>
